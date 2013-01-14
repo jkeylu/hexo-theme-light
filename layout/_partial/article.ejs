@@ -28,6 +28,10 @@
         <div class="alignright">
           <a href="<%- item.permalink %>#disqus_thread" class="comment-link">Comments</a>
         </div>
+        <% } else if (item.comment && config.duoshuo_shortname) {%>
+        <div class="alignright">
+          <a href="<%- item.permalink %>#ds-thread" class="comment-link">Comments</a>
+        </div>
         <% } %>
       <% } else { %>
         <%- partial('post/category') %>

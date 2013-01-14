@@ -16,12 +16,16 @@ twitter:
   tweet_count: 5
 
 addthis:
-  enable: true
+  enable: false
   pubid:
   facebook: true
   twitter: true
   google: true
   pinterest: true
+
+jiathis:
+  enable: true
+  uid:
 
 fancybox: true
 

@@ -16,3 +16,25 @@
   </div>
   <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js<% if (theme.addthis.pubid){ %>#pubid=<%= theme.addthis.pubid %><% } %>"></script>
 <% } %>
+<% if (theme.jiathis.enable) { %>
+  <div class="jiathis_style_24x24">
+    <a class="jiathis_button_qzone"></a>
+    <a class="jiathis_button_tsina"></a>
+    <a class="jiathis_button_tqq"></a>
+    <a class="jiathis_button_renren"></a>
+    <a class="jiathis_button_kaixin001"></a>
+    <a class="jiathis_button_xiaoyou"></a>
+    <a href="http://www.jiathis.com/share<% if (theme.jiathis.uid) { %>?uid=<%= theme.jiathis.uid %><% } %>" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+    <a class="jiathis_counter_style"></a>
+  </div>
+  <script type="text/javascript" >
+    var jiathis_config={
+      data_track_clickback:true,
+      siteNum:8,
+      sm:"googleplus,douban9dian,twitter,fb,huaban,xianguo,fanfou,evernote",
+      summary:"",
+      hideMore:false
+    }
+  </script>
+  <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js<% if (theme.jiathis.uid) { %>?uid=<%= theme.jiathis.uid %><% } %>" charset="utf-8"></script>
+<% } %>
